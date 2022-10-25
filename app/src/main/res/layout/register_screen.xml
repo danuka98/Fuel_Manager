@@ -8,7 +8,7 @@
 
     <ImageView
         android:layout_width="500dp"
-        android:layout_height="350dp"
+        android:layout_height="250dp"
         android:src="@drawable/register"/>
 
     <TextView
@@ -20,51 +20,67 @@
         android:textStyle="bold"
         android:letterSpacing="0.03"/>
 
-    <EditText
-        android:layout_width="350dp"
-        android:layout_height="45dp"
-        android:background="@drawable/forget"
-        android:hint="Email"
-        android:textColorHint="@color/text_hint_color"
-        android:textColor="@color/purple_500"
-        android:textStyle="bold"
-        android:textSize="18dp"
-        android:layout_marginTop="20dp"
-        android:paddingLeft="20dp"/>
-
-    <EditText
-        android:layout_width="350dp"
-        android:layout_height="45dp"
-        android:background="@drawable/forget"
-        android:hint="Password"
-        android:textColorHint="@color/text_hint_color"
-        android:textColor="@color/purple_500"
-        android:textStyle="bold"
-        android:textSize="18dp"
-        android:layout_marginTop="20dp"
-        android:paddingLeft="20dp"/>
-
-    <EditText
-        android:layout_width="350dp"
-        android:layout_height="45dp"
-        android:background="@drawable/forget"
-        android:hint="Confirm Password"
-        android:textColorHint="@color/text_hint_color"
-        android:textColor="@color/purple_500"
-        android:textStyle="bold"
-        android:textSize="18dp"
-        android:layout_marginTop="20dp"
-        android:paddingLeft="20dp"/>
-
     <Spinner
         android:id="@+id/spinner"
         android:layout_width="350dp"
         android:layout_height="48dp"
+        android:background="@drawable/spinner_style"
+        android:popupBackground="@color/purple_700"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"/>
 
-        android:layout_marginTop="20dp"
-        android:background="#673AB7" />
+    <EditText
+        android:layout_width="350dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/forget"
+        android:hint="Username"
+        android:paddingLeft="20dp"
+        android:textColor="@color/purple_500"
+        android:textColorHint="@color/text_hint_color"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:layout_width="350dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/forget"
+        android:hint="Password"
+        android:paddingLeft="20dp"
+        android:textColor="@color/purple_500"
+        android:textColorHint="@color/text_hint_color"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:layout_width="350dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/forget"
+        android:hint="Confirm Password"
+        android:paddingLeft="20dp"
+        android:textColor="@color/purple_500"
+        android:textColorHint="@color/text_hint_color"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/stationCode"
+        android:layout_width="350dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/forget"
+        android:hint="Station Code"
+        android:paddingLeft="20dp"
+        android:textColor="@color/purple_500"
+        android:textColorHint="@color/text_hint_color"
+        android:visibility="invisible"
+        android:textSize="18dp"
+        android:textStyle="bold" />
 
     <Button
+        android:id="@+id/registerBtn"
         android:layout_width="350dp"
         android:layout_height="50dp"
         android:background="@drawable/button"
@@ -75,6 +91,7 @@
         android:layout_marginTop="25dp"/>
 
     <TextView
+        android:id="@+id/signIn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Already have an account? Sign In"

@@ -168,7 +168,7 @@
 
             <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="180dp"
+                android:layout_height="100dp"
                 android:background="@drawable/gradient_1" />
 
             <LinearLayout
@@ -181,14 +181,14 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Vehicle No :"
+                    android:text="Fuel Status :"
                     android:textSize="18dp"
                     android:textColor="@color/white"/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="CBJ 8754"
+                    android:text="Available"
                     android:textSize="18dp"
                     android:textColor="@color/white"
                     android:layout_marginLeft="10dp"/>
@@ -204,14 +204,72 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Quota Used :"
+                    android:text="Waiting Time :"
                     android:textSize="18dp"
                     android:textColor="@color/white"/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="20L"
+                    android:text="1 Hour"
+                    android:textSize="18dp"
+                    android:textColor="@color/white"
+                    android:layout_marginLeft="10dp"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="15dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:background="@drawable/gradient_1" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Current Fuel Length"
+                    android:textSize="22dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="50dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total Number of Vehicles :"
+                    android:textSize="18dp"
+                    android:textColor="@color/white"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="20"
                     android:textSize="18dp"
                     android:textColor="@color/white"
                     android:layout_marginLeft="10dp"/>
@@ -220,70 +278,58 @@
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
+                android:orientation="vertical"
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="80dp">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Weekly Balance :"
+                    android:text="Vehicle Types :"
                     android:textSize="18dp"
                     android:textColor="@color/white"/>
 
-                <TextView
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="0.000L"
-                    android:textSize="18dp"
-                    android:textColor="@color/white"
-                    android:layout_marginLeft="10dp"/>
-            </LinearLayout>
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
 
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="110dp">
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/ic_baseline_directions_bike_24" />
 
-                <TextView
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:text="15"
+                        android:textSize="18dp"
+                        android:textColor="@color/white"/>
+                </LinearLayout>
+
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Station Code :"
-                    android:textSize="18dp"
-                    android:textColor="@color/white"/>
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal">
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="100578"
-                    android:textSize="18dp"
-                    android:textColor="@color/white"
-                    android:layout_marginLeft="10dp"/>
-            </LinearLayout>
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/ic_baseline_directions_car_24" />
 
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="140dp">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Expires on :"
-                    android:textSize="18dp"
-                    android:textColor="@color/white"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="2022-10-23"
-                    android:textSize="18dp"
-                    android:textColor="@color/white"
-                    android:layout_marginLeft="10dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:text="5"
+                        android:textSize="18dp"
+                        android:textColor="@color/white"/>
+                </LinearLayout>
             </LinearLayout>
 
         </androidx.cardview.widget.CardView>

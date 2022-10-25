@@ -58,6 +58,7 @@
         android:layout_marginRight="35dp"/>
 
     <Button
+        android:id="@+id/loginBtn"
         android:layout_width="350dp"
         android:layout_height="50dp"
         android:background="@drawable/button"
@@ -68,11 +69,13 @@
         android:layout_marginTop="20dp"/>
 
     <TextView
+        android:id="@+id/signup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Don't have an account? Sign Up"
         android:textColor="@color/purple_500"
         android:textStyle="bold"
+        android:clickable="true"
         android:textSize="18dp"
         android:layout_marginTop="15dp"/>
 
