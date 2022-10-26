@@ -19,7 +19,7 @@ public class RegisterActivity extends AppCompatActivity {
 
     Spinner spinner;
     TextView textView;
-    EditText editText;
+    EditText stationCode,stationName;
     Button button;
 
     @Override
@@ -28,7 +28,8 @@ public class RegisterActivity extends AppCompatActivity {
         setContentView(R.layout.register_screen);
         spinner = findViewById(R.id.spinner);
         textView = findViewById(R.id.signIn);
-        editText = findViewById(R.id.stationCode);
+        stationCode = findViewById(R.id.stationCode);
+        stationName = findViewById(R.id.stationName);
         button = findViewById(R.id.registerBtn);
 
         ///set the drop down values with visibility
@@ -39,10 +40,12 @@ public class RegisterActivity extends AppCompatActivity {
             @Override
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
                 if(spinner.getSelectedItem().toString().equals("Station Manager")){
-                    editText.setVisibility(View.VISIBLE);
+                    stationCode.setVisibility(View.VISIBLE);
+                    stationName.setVisibility(View.VISIBLE);
                 }
                 else {
-                    editText.setVisibility(View.INVISIBLE);
+                    stationCode.setVisibility(View.INVISIBLE);
+                    stationName.setVisibility(View.INVISIBLE);
                 }
             }
             @Override
