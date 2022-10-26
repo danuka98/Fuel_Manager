@@ -30,6 +30,7 @@
         android:layout_marginTop="10dp"/>
 
     <EditText
+        android:id="@+id/username"
         android:layout_width="350dp"
         android:layout_height="48dp"
         android:layout_marginTop="10dp"
@@ -42,6 +43,7 @@
         android:textStyle="bold" />
 
     <EditText
+        android:id="@+id/password"
         android:layout_width="350dp"
         android:layout_height="48dp"
         android:layout_marginTop="10dp"
@@ -54,11 +56,12 @@
         android:textStyle="bold" />
 
     <EditText
+        android:id="@+id/vehicleType"
         android:layout_width="350dp"
         android:layout_height="48dp"
         android:layout_marginTop="10dp"
         android:background="@drawable/forget"
-        android:hint="Confirm Password"
+        android:hint="Vehicle Type"
         android:paddingLeft="20dp"
         android:textColor="@color/purple_500"
         android:textColorHint="@color/text_hint_color"

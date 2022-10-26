@@ -85,6 +85,7 @@
                     android:layout_marginTop="40dp"/>
 
                 <TextView
+                    android:id="@+id/departText"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@id/arrivalTime"
@@ -209,6 +210,7 @@
                     android:textColor="@color/white"/>
 
                 <TextView
+                    android:id="@+id/waitingTime"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="1 Hour"
