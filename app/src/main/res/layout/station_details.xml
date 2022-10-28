@@ -7,6 +7,14 @@
     android:background="@drawable/background1"
     android:orientation="vertical">
 
+    <ProgressBar
+        android:id="@+id/loadingPro"
+        android:layout_gravity="center"
+        android:indeterminateTint="@color/purple_700"
+        android:layout_width="60dp"
+        android:layout_height="match_parent">
+    </ProgressBar>
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -32,6 +40,7 @@
             android:layout_below="@id/hello"/>
 
         <ImageButton
+            android:id="@+id/profileIcon"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_alignParentRight="true"
@@ -143,12 +152,33 @@
                     android:layout_width="130dp"
                     android:layout_height="wrap_content"
                     android:text="Anura Fuel Station"
-                    android:textSize="20dp"
+                    android:textSize="16dp"
                     android:textColor="@color/white"
                     android:layout_below="@id/arrivalText"
                     android:textStyle="bold"
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="40dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="City :"
+                    android:textSize="18dp"
+                    android:textColor="@color/white"
+                    android:layout_below="@id/stationName"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="85dp"/>
+
+                <TextView
+                    android:id="@+id/city"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:text="Colombo"
+                    android:textSize="16dp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="110dp"/>
 
             </androidx.cardview.widget.CardView>
         </RelativeLayout>
@@ -187,6 +217,7 @@
                     android:textColor="@color/white"/>
 
                 <TextView
+                    android:id="@+id/fuelAvailable"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Available"
@@ -269,6 +300,7 @@
                     android:textColor="@color/white"/>
 
                 <TextView
+                    android:id="@+id/fuellength"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="20"
@@ -284,54 +316,55 @@
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="80dp">
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Vehicle Types :"
-                    android:textSize="18dp"
-                    android:textColor="@color/white"/>
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Vehicle Types :"-->
+<!--                    android:textSize="18dp"-->
+<!--                    android:textColor="@color/white"/>-->
 
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:orientation="horizontal">
+<!--                <LinearLayout-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:orientation="horizontal">-->
 
-                    <ImageView
-                        android:id="@+id/imageView3"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        app:srcCompat="@drawable/ic_baseline_directions_bike_24" />
+<!--                    <ImageView-->
+<!--                        android:id="@+id/imageView3"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        app:srcCompat="@drawable/ic_baseline_directions_bike_24" />-->
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="15dp"
-                        android:text="15"
-                        android:textSize="18dp"
-                        android:textColor="@color/white"/>
-                </LinearLayout>
+<!--                    <TextView-->
+<!--                        android:id="@+id/bikelength"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginLeft="15dp"-->
+<!--                        android:text="15"-->
+<!--                        android:textSize="18dp"-->
+<!--                        android:textColor="@color/white"/>-->
+<!--                </LinearLayout>-->
 
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:orientation="horizontal">
+<!--                <LinearLayout-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="center_horizontal"-->
+<!--                    android:orientation="horizontal">-->
 
-                    <ImageView
-                        android:id="@+id/imageView2"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        app:srcCompat="@drawable/ic_baseline_directions_car_24" />
+<!--                    <ImageView-->
+<!--                        android:id="@+id/imageView2"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        app:srcCompat="@drawable/ic_baseline_directions_car_24" />-->
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="15dp"
-                        android:text="5"
-                        android:textSize="18dp"
-                        android:textColor="@color/white"/>
-                </LinearLayout>
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginLeft="15dp"-->
+<!--                        android:text="5"-->
+<!--                        android:textSize="18dp"-->
+<!--                        android:textColor="@color/white"/>-->
+<!--                </LinearLayout>-->
             </LinearLayout>
 
         </androidx.cardview.widget.CardView>

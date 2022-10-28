@@ -31,6 +31,14 @@
         android:padding="20dp"
         android:inputType="text"/>
 
+    <ProgressBar
+        android:id="@+id/loadingList"
+        android:layout_gravity="center"
+        android:indeterminateTint="@color/purple_700"
+        android:layout_width="60dp"
+        android:layout_height="match_parent">
+    </ProgressBar>
+
     <ListView
         android:id="@+id/fuelList"
         android:layout_width="match_parent"

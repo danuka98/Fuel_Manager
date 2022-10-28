@@ -25,10 +25,11 @@ public class ApiClient {
         return retrofit;
     }
 
-    public  static  UserService getService(){
+    public static UserService getService(){
         UserService userService = getRetrofit().create(UserService.class);
 
         Log.d("Reg","Reg details " +userService);
         return  userService;
     }
+
 }

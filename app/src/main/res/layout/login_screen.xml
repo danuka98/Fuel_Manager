@@ -28,7 +28,7 @@
         android:layout_marginTop="30dp"
         android:background="@drawable/forget"
         android:paddingLeft="20dp"
-        android:hint="Email"
+        android:hint="User Name"
         android:textColorHint="@color/text_hint_color"
         android:textColor="@color/purple_500"
         android:textSize="18dp"
